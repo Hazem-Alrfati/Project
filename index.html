@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Page</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!--JQ-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="pointerUp"><a href="#home"><i class="fas fa-level-up-alt"></i></a></div>
+    <!-- Start Header -->
+    <header id="home">
+      <div class="container">
+        <div class="logo"><i class="fas fa-brain"></i></div>
+        <div class="menu-bar" id="menu-bar">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links">
+          <li>
+            <a href="#home" class="active">Home<i class="fas fa-home"></i></a></i>
+          </li>
+          <li><a href="#category">Category<i class="fas fa-book"></i></a></li>
+          <li><a href="#courses">Courses<i class="fas fa-book-reader"></i></a></li>
+          <li><a href="introduction.html" target="_blank">Introduction <i class="fas fa-chart-pie"></i></a></li>
+          <li>
+            <a href="#about">About<i class="fas fa-address-card"></i></a>
+          </li>
+        </div>
+        <div class="nav-search">
+          <input
+            type="search"
+            name="search"
+            placeholder="Search Course"
+            autocomplete="off"
+          />
+          <div class="nav-icon">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Landing-->
+    <div class="landing">
+        <div class="land-text">
+          <h1>Hello World! <br> Machine Learning Tutorial</h1>
+          <p>Let's go to know the algorithms of machine learning</p>
+        </div>
+    </div>
+    <!-- End Landing-->
+
+    <!--Start Category-->
+      <div id="category" class="category">
+        <div class="container">
+          <h5>Online category</h5>
+          <h3>Let's Brows All Category</h3>
+          <div class="first-row">
+            <div class="box-one box">
+              <i class="fas fa-desktop"></i>
+              <h3>Passive</h3>
+              <ul class="subjects">
+                <li><span>Perceptron :</span> <br> The perceptron is a supervised learning algorithm of binary classifiers. it is a single layer neural network, the model consists of a linear combiner followed by a hard limiter. it is a neural network unit (an artificial neuron) that does certain computations to detect features or business intelligence in the input data.</li>
+              </ul>
+            </div>
+            <div class="box-two box">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <h3 class="top">Active</h3>
+              <ul class="subjects top">
+                <li><span>Back Propagation :</span> <br> Back Propagation is a supervised learning algorithm of artificial neural networks using gradient descent.</li>
+                <li><span>Naive Bayes :</span> <br> Naïve Bayes algorithm is a supervised learning algorithm, which is based on Bayes theorem and used for solving classification problems.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--End Category-->
+
+    <!-- Start Courses -->
+    <div class="courses" id="courses">
+      <div class="container">
+        <h1>Algorithms</h1>
+        <ul class="links">
+          <li><a href="perceptron_intro.html" target="_blank">Perceptron <i class="fas fa-chevron-right"></i></a></li>
+          <li><a href="back_propagation_intro.html" target="_blank">Back Propagation <i class="fas fa-chevron-right"></i></a></li>
+          <li><a href="naive_intro.html" target="_blank">Naive Bayes <i class="fas fa-chevron-right"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Courses-->
+
+    <!-- Start Footer-->
+      <div class="footer">
+        <div class="container">
+          <div class="text-footer">
+            <h1>Stay Updated</h1>
+            <h1>Let's Get Social</h1>
+          </div>
+          <div class="links">
+            <div class="email">
+              <input type="text" name="email" placeholder="Your email address" autocomplete="off">
+              <button>Subscribe Now</button>
+            </div>
+            <div class="social">
+              <div><a href="https://www.facebook.com/hazem.rafaty" target="_blank"><i class="fab fa-facebook"></i></a></div>
+              <div><a href="tel:+962789501453"><i class="fab fa-whatsapp"></i></a></div>
+              <div><a href="https://www.facebook.com/hazem.rafaty" target="_blank"><i class="fab fa-facebook-messenger"></i></a></div>
+              <div><a href="mailto: TheCoders@gmail.com"><i class="far fa-envelope"></i></a></div>
+            </div>
+          </div>
+          <hr>
+          <div class="about" id="about">
+            <h2>About Our Website: </h2>
+            <p>Machine learning tutorial website is an interactive learning website that contains two fields the first field talk about the introduction to machine learning and the second field talk about machine learning algorithms and how they work.</p>
+            <p>The website is not only presenting the topics theoretically, but also contains a practical aspect, it contains many quizzes, exercises after each chapter and project at the end of the material and it produces a many of algorithms such as Naïve Bayes, Perceptron and Back Propagation</p>
+          </div>
+          <hr>          
+          <div class="copy">
+            Copyright &copy; 2021 All rights reserved | This website is made by <i class="fa fa-heart" aria-hidden="true"></i> TheCoders 
+          </div>
+        </div>
+      </div>
+    <!-- End Footer-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

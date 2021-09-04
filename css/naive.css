@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.byprog {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.byprog div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.byprog button {
+  background-color: #01987a;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+.byprog button:hover {
+  background-color: #065a49;
+}
+
+.byprog button::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  font-weight: 900;
+  color: green;
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  right: -32px;
+  opacity: 0;
+}
+
+.show {
+  background-color: green !important;
+}
+
+.buttons {
+  margin-bottom: 100px;
+}
+
+.buttons div {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  width: 250px;
+}
+
+select {
+  margin-right: 80px;
+  width: 100px;
+  height: 28px;
+}
+
+.box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+.end {
+  border-radius: 10px;
+  color: red;
+  font-size: 17px;
+  font-weight: bold;
+  width: 250px !important;
+  border: 2px solid #01987a;
+}
+
+.border {
+  border: 2px solid #01987a;
+}

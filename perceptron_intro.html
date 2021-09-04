@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perceptron | Page</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/perceptron_intro.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Piedra&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="pointerUp">
+      <a href="#home"><i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- Start Header -->
+    <header id="home">
+      <div class="container">
+        <div class="logo"><i class="fas fa-brain"></i></div>
+        <div class="head-name">Perceptron</div>
+      </div>
+    </header>
+    <!-- End Header-->
+
+    <!-- Start Landing -->
+    <div class="landing">
+      <div class="container">
+        <h2>A Beginner's Guide For Perceptron</h2>
+        <h3>Biological Neuron</h3>
+        <p>
+          A human brain has billions of neurons. Neurons are interconnected
+          nerve cells in the human brain that are involved in processing and
+          transmitting chemical and electrical signals. Dendrites are branches
+          that receive information from other neurons.
+        </p>
+        <img src="imgs/biological-neuron_1.jpg" alt="" />
+        <p>
+          The Neural Networks work the same way as the perceptron. So, if you
+          want to know how neural network works, learn how perceptron works.
+        </p>
+        <p>
+          The perceptron is an algorithm for supervised learning of binary
+          classifiers. it is a single layer neural network, the model consists
+          of a linear combiner followed by a hard limiter. it is a neural
+          network unit (an artificial neuron) that does certain computations to
+          detect features or business intelligence in the input data. And this
+          perceptron tutorial will give you a knowledge of Perceptron and its
+          activation functions.
+        </p>
+        <h3>The perceptron consists of 4 parts</h3>
+        <ol>
+          <li>Input values</li>
+          <li>Weights and Bias</li>
+          <li>Summation</li>
+          <li>Activation Function</li>
+        </ol>
+        <img src="imgs/General.png" alt="" />
+        <h3>But how does it work?</h3>
+        <ol>
+          <li>All the inputs x are multiplied with their weights w.</li>
+          <img src="imgs/biological-neuron_3.png" alt="" />
+          <li>Add all the multiplied values and call them Weighted Sum.</li>
+          <li>Apply that weighted sum to the correct Activation Function.</li>
+          <img src="imgs/Functions.jpg" alt="" />
+        </ol>
+        <h3>Why do we need Bias?</h3>
+        <p>
+          A bias value allows you to shift the activation function curve up or
+          down
+        </p>
+        <h3>Why do we use Perceptron?</h3>
+        <p>
+          Perceptron is usually used to classify the data into two parts.
+          Therefore, it is also known as a Linear Binary Classifier.
+        </p>
+        <h3>ANN learning problems</h3>
+        <ol>
+          <li>Underfitting: Training error too large.</li>
+          <li>Overfitting: Training error small, but testing error large.</li>
+        </ol>
+        <h3>Use cross validation to solve overfitting problems</h3>
+        <ol>
+          <li>Training data (70%)</li>
+          <li>Validation data (15%) "optimize parameter setting"</li>
+          <li>Test data (15%) "Generalization error"</li>
+        </ol>
+      </div>
+    </div>
+    <!-- End Landing -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="example">
+        <a href="perceptron.html" target="_blank">
+          Let's Go To See Logical Operation ( AND ) Example Step By Step
+          <i class="fas fa-angle-right"></i>
+        </a>
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <script src="js/perceptron_intro.js"></script>
+  </body>
+</html>

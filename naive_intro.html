@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naive-Bayes | Page</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/naive_intro.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Piedra&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="pointerUp">
+      <a href="#home"><i class="fas fa-level-up-alt"></i></a>
+    </div>
+    <!-- Start Header -->
+    <header id="home">
+      <div class="container">
+        <div class="logo"><i class="fas fa-brain"></i></div>
+        <div class="head-name">Naive-Bayes</div>
+      </div>
+    </header>
+    <!-- End Header-->
+
+    <!-- Start Landing -->
+    <div class="landing">
+      <div class="container">
+        <h2>A Beginner's Guide For Naive-Bayes</h2>
+        <h3>What is Naive Bayes algorithm</h3>
+        <p>
+          It is a classification technique based on Bayes’ Theorem with an
+          assumption of independence among predictors. In simple terms, a Naive
+          Bayes classifier assumes that the presence of a particular feature in
+          a class is unrelated to the presence of any other feature.
+        </p>
+        <p>
+          Naive Bayes model is easy to build and particularly useful for very
+          large data sets. Along with simplicity, Naive Bayes is known to
+          outperform even highly sophisticated classification methods.
+        </p>
+        <p>
+          Bayes theorem provides a way of calculating posterior probability
+          P(c|x) from P(c), P(x) and P(x|c). Look at the equation below:
+        </p>
+        <img src="imgs/Naive1.png" alt="" />
+        <ul>
+          <li>
+            P(c|x) is the posterior probability of class (c, target) given
+            predictor (x, attributes).
+          </li>
+          <li>P(c) is the prior probability of class.</li>
+          <li>
+            P(x|c) is the likelihood which is the probability of predictor given
+            class.
+          </li>
+          <li>P(x) is the prior probability of predictor.</li>
+        </ul>
+        <h3>How Naive Bayes algorithm works?</h3>
+        <ol>
+          <li>Convert the data set into a frequency table</li>
+          <li>Create Likelihood table by finding the probabilities</li>
+          <li>
+            Use Naive Bayesian equation to calculate the posterior probability
+            for each class. The class with the highest posterior probability is
+            the outcome of prediction.
+          </li>
+        </ol>
+        <p>
+          Naive Bayes uses a similar method to predict the probability of
+          different class based on various attributes. This algorithm is mostly
+          used in text classification and with problems having multiple classes.
+        </p>
+        <h3>Applications of Naive Bayes Algorithms</h3>
+        <ul>
+          <li><span>Diagnosis</span></li>
+          <li>
+            <span>Classifying text documents and spam filtering: </span>Naive
+            Bayes classifiers mostly used in text classification (due to better
+            result in multi class problems and independence rule) have higher
+            success rate as compared to other algorithms. As a result, it is
+            widely used in Spam filtering (identify spam e-mail) and Sentiment
+            Analysis (in social media analysis, to identify positive and
+            negative customer sentiments)
+          </li>
+          <li>
+            <span>Multi class Prediction:</span> This algorithm is also well
+            known for multi class prediction feature. Here we can predict the
+            probability of multiple classes of target variable.
+          </li>
+          <li>
+            <span>Recommendation System:</span> Naive Bayes Classifier and
+            Collaborative Filtering together builds a Recommendation System that
+            uses machine learning and data mining techniques to filter unseen
+            information and predict whether a user would like a given resource
+            or not
+          </li>
+        </ul>
+        <h3>Conclusion on Naïve Bayes classifiers</h3>
+        <ul>
+          <li>Naïve Bayes is based on the independence assumption</li>
+          <li>
+            Training is very easy and fast; just requiring considering each
+            attribute in each class separately
+          </li>
+          <li>
+            Test is straightforward; just looking up tables or calculating
+            conditional probabilities with normal distributions
+          </li>
+        </ul>
+        <h3>Naïve Bayes is a popular generative classifier model</h3>
+        <ul>
+          <li>
+            Performance of naïve Bayes is competitive to most of
+            state-of-the-art classifiers even in presence of violating
+            independence assumption
+          </li>
+          <li>
+            It has many successful applications, e.g., spam mail filtering
+          </li>
+          <li>A good candidate of a base learner in ensemble learning</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="example">
+        <a href="naive.html" target="_blank">
+          Let's Go To See The Naive-Bayes
+          <i class="fas fa-angle-right"></i>
+        </a>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <script src="js/naive_intro.js"></script>
+  </body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction | Page</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/introduction.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Piedra&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="pointerUp">
+      <a href="#home"><i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- Start Header -->
+    <header id="home">
+      <div class="container">
+        <div class="logo"><i class="fas fa-brain"></i></div>
+        <div class="head-name">Machine Learning</div>
+      </div>
+    </header>
+    <!-- End Header-->
+    <!-- Start Landing -->
+    <div class="landing">
+      <div class="container">
+        <h2>A Beginner's Guide For Machine Learning</h2>
+        <h3>What is machine learning?</h3>
+        <p>
+          Machine learning specializes in how computers simulate or implement
+          human learning behavior to acquire new knowledge or skills, and
+          reorganize existing knowledge structures to improve their performance
+          continuously. It is a subset of artificial intelligence. Any system
+          without learning ability can hardly be considered a real intelligent
+          system.
+        </p>
+        <h3>Learning System elements:</h3>
+        <ol>
+          <li>Data</li>
+          <li>Algorithm</li>
+          <li>Computing power</li>
+          <li>Scenario</li>
+        </ol>
+        <p>
+          Machine learning: Adaptive mechanism that enable computers to learn
+          from experience by: example and analogy. <br />
+          Machine learning popular approach: artificial neural network "ANN".
+        </p>
+        <img src="imgs/intro1.png" alt="" />
+        <h3>Basic Terms and Concepts (1)</h3>
+        <ol>
+          <li>
+            <span>Dataset:</span> refers to a set of data used in machine
+            learning tasks. Each piece of data is called a sample. The event or
+            attribute that reflects the performance or nature of a sample in a
+            certain aspect is called a feature.
+          </li>
+          <li>
+            <span>Training set:</span> refers to a dataset used in the training
+            process, where each sample is referred to as a training sample. The
+            process of learning a model from data is called learning (training).
+          </li>
+          <li>
+            <span>Test set:</span> Test refers to the process of using the
+            learnt model for prediction. The dataset used is called a test set,
+            and each sample is called a test sample.
+          </li>
+        </ol>
+        <h3>Basic Terms and Concepts (2)</h3>
+        <ol>
+          <li>
+            <span>Generalization capability:</span> The goal of machine learning
+            is that the learnt model should perform well on new samples, not
+            just those on which the model has been trained. The ability to
+            perform well on new samples is called generalization capability.
+          </li>
+          <li>
+            <span>Error:</span> refers to the difference between the sample
+            result predicted by the learnt model and the actual sample result.
+            <ul>
+              <li>Training error: error of the model on the training set</li>
+              <li>
+                Generalization error: error on the new sample. Obviously, we
+                prefer a model with a smaller generalization error.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span>Underfitting:</span> occurs when the training error is too
+            large.
+          </li>
+          <li>
+            <span>Overfitting:</span> occurs when the training error of the
+            learnt model is small but the generalization error is large (weak
+            generalization capability).
+          </li>
+        </ol>
+        <img src="imgs/intro2.png" alt="" />
+        <h3>Basic Terms and Concepts (3)</h3>
+        <p>
+          Many kinds of tasks can be solved with machine learning. The following
+          describes the most typical and common types:
+        </p>
+        <ul>
+          <li>
+            <span>Classification:</span> The computer program is asked to
+            specify which of k categories some input belongs to, For example,
+            the image classification algorithm in computer vision is to solve a
+            classification task.
+          </li>
+          <li>
+            <span>Regression:</span> In this type of task, the computer program
+            is asked to predict a numerical value given some input, An example
+            of a regression task is the prediction of the expected claim amount
+            that an insured person will make (used to set insurance premiums),
+            or the prediction of future prices of securities.
+          </li>
+        </ul>
+        <p>
+          Classification and regression are two major types of prediction tasks.
+          The outputs of classification are discrete type values while the
+          outputs of regression are consecutive values.
+        </p>
+        <h3>How Machine Learning Work?</h3>
+        <ol>
+          <li>
+            <span>A Decision Process:</span> In general, machine learning
+            algorithms are used to make a prediction or classification. Based on
+            some input data, which can be labelled or unlabeled, your algorithm
+            will produce an estimate about a pattern in the data.
+          </li>
+          <li>
+            <span>An Error Function:</span> An error function serves to evaluate
+            the prediction of the model. If there are known examples, an error
+            function can make a comparison to assess the accuracy of the model.
+          </li>
+          <li>
+            <span>An Model Optimization Process:</span> If the model can fit
+            better to the data points in the training set, then weights are
+            adjusted to reduce the discrepancy between the known example and the
+            model estimate. The algorithm will repeat this evaluate and optimize
+            process, updating weights autonomously until a threshold of accuracy
+            has been met.
+          </li>
+        </ol>
+        <h3>Machine learning Methods</h3>
+        <ol>
+          <li><span>Supervised machine learning</span></li>
+          <p>
+            Based on the samples of known classes, obtain an optimal model with
+            required performance through training and learning. Then, the model
+            is used to map all inputs to outputs and perform simple judgment on
+            outputs (classification). This model classifies unknown data. “image
+            and speech recognition, forecasting, classification (predict a
+            label), regression (predict a quantity)”
+          </p>
+          <li><span>Unsupervised machine learning </span></li>
+          <p>
+            Unsupervised learning, uses machine learning algorithms to analyze
+            and cluster unlabeled datasets. These algorithms discover hidden
+            patterns or data groupings without the need for human intervention.
+            Its ability to discover similarities and differences in information
+            make it the ideal solution for exploratory data analysis,
+            cross-selling strategies, customer segmentation, image and pattern
+            recognition. It’s also used to reduce the number of features in a
+            model through the process of dimensionality reduction; principal
+            component analysis (PCA) and singular value decomposition (SVD) are
+            two common approaches for this. Other algorithms used in
+            unsupervised learning include neural networks, k-means clustering,
+            probabilistic clustering methods, and more.
+          </p>
+          <li><span>Semi-supervised learning </span></li>
+          <p>
+            Semi-supervised learning offers a happy medium between supervised
+            and unsupervised learning. During training, it uses a smaller
+            labeled data set to guide classification and feature extraction from
+            a larger, unlabeled data set. Semi-supervised learning can solve the
+            problem of having not enough labeled data (or not being able to
+            afford to label enough data) to train a supervised learning
+            algorithm.
+          </p>
+          <li>
+            <span>Reinforcement learning:</span>
+          </li>
+          <p>
+            Learning systems learn mappings from environments to actions to
+            maximize the value of the reward signal (reinforcement signal)
+            function. The difference between reinforcement learning and
+            supervised learning is the teacher signal. The reinforcement signal
+            provided by the environment in reinforcement learning is an
+            assessment on the action (scalar signal) rather than telling the
+            learning system how to perform correct actions. “ have rules, win a
+            game with strategy”
+          </p>
+        </ol>
+        
+    <!-- End Landing -->
+  </body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back Propagation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Files-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/back_propagation.css" />
+  </head>
+  <body>
+    <div class="container-d">
+      <div class="col1">
+        <h3>Back Propagation Learning: Logical Operation (XOR)</h3>
+        <p class="content-question">
+          Welcome to Machine Learning Tutorials "Back Propagation Example". This
+          will guide you to know the equations of Back-Propagation and see the
+          results of each iteration .
+        </p>
+        <img src="./imgs/back_example.png" alt="example" />
+        <div class="col1-box">
+          <!-- Column 1 -->
+          <div class="col1-col1">
+            <div class="user-input">
+              <label for="w13">W<sub>13</sub></label>
+              <input
+                type="range"
+                id="w13"
+                name="w13"
+                class="slider"
+                min="-1.2"
+                max="1.2"
+                step="0.1"
+                value="0"
+              />
+              <span class="slider_label"></span>
+            </div>
+            <div class="user-input">
+              <label for="w23">W<sub>23</sub></label>
+              <input
+                type="range"
+                id="w23"
+                name="w23"
+                class="slider"
+                min="-1.2"
+                max="1.2"
+                step="0.1"
+                value="0"
+              />
+              <span class="slider_label"></span>
+            </div>
+            <div class="user-input">
+              <label for="w14">W<sub>14</sub></label>
+              <input
+                type="range"
+                id="w14"
+                name="w14"
+                class="slider"
+                min="-1.2"
+                max="1.2"
+                step="0.1"
+                value="0"
+              />
+              <span class="slider_label"></span>
+            </div>
+            <div class="user-input">
+              <label for="w24">W<sub>24</sub></label>
+              <input
+                type="range"
+                id="w24"
+                name="w24"
+                class="slider"
+                min="-1.2"
+                max="1.2"
+                step="0.1"
+                value="0"
+              />
+              <span class="slider_label"></span>
+            </div>
+            <div class="user-input">
+              <label for="w35">W<sub>35</sub></label>
+              <input
+                type="range"
+                id="w35"
+                name="w35"
+                class="slider"
+                min="-1.2"
+                max="1.2"
+                step="0.1"
+                value="0"
+              />
+              <span class="slider_label"></span>
+            </div>
+            <div class="user-input">
+              <label for="w45">W<sub>45</sub></label>
+              <input
+                type="range"
+                id="w45"
+                name="w45"
+                class="slider"
+                min="-1.2"
+                max="1.2"
+                step="0.1"
+                value="0"
+              />
+              <span class="slider_label"></span>
+            </div>
+          </div>
+          <div class="col1-col2">
+            <div class="user-input">
+              <label class="theta" for="theta3">&Theta;<sub>3</sub></label>
+              <input
+                type="range"
+                id="theta3"
+                name="theta3"
+                class="slider"
+                min="-1.2"
+                max="1.2"
+                step="0.1"
+                value="0"
+              />
+              <span class="slider_label"></span>
+            </div>
+            <div class="user-input">
+              <label class="theta" for="theta4">&Theta;<sub>4</sub></label>
+              <input
+                type="range"
+                id="theta4"
+                name="theta4"
+                class="slider"
+                min="-1.2"
+                max="1.2"
+                step="0.1"
+                value="0"
+              />
+              <span class="slider_label"></span>
+            </div>
+            <div class="user-input">
+              <label class="theta" for="theta5">&Theta;<sub>5</sub></label>
+              <input
+                type="range"
+                id="theta5"
+                name="theta5"
+                class="slider"
+                min="-1.2"
+                max="1.2"
+                step="0.1"
+                value="0"
+              />
+              <span class="slider_label"></span>
+            </div>
+            <div class="user-input">
+              <label class="alpha" for="alpha">&alpha;</label>
+              <input
+                type="range"
+                id="alpha"
+                name="alpha"
+                class="slider"
+                min="-1.2"
+                max="1.2"
+                step="0.1"
+                value="0"
+              />
+              <span class="slider_label"></span>
+            </div>
+          </div>
+        </div>
+        <div class="note">
+          Note: You have to choose the values and then click on "Select Button"
+        </div>
+        <button class="sel" id="select" onclick="showing()">Select</button>
+        <i id="chk" class="fas fa-check"></i>
+        <div class="all-btn">
+          <button id="back">Back</button>
+          <button id="next">Next</button>
+        </div>
+      </div>
+      <div class="col2"></div>
+      <!-- Column 3 -->
+      <div class="col3">
+        <h3>Equations Of Back-Propagation</h3>
+        <img src="imgs/back-equ.png" alt="Equations" />
+        <h3>
+          The Results of Epoch [<span id="col3-h-sp1">0</span>], Iteration
+          [<span id="col3-h-sp2">0</span>]
+        </h3>
+        <div class="col3-box">
+          <div class="col3-col1 col33">
+            <div id="y33">Y3 = <span id="show1"></span></div>
+            <div id="y44">Y4 = <span id="show2"></span></div>
+            <div id="y55">Y5 = <span id="show3"></span></div>
+            <div id="ee">E = <span id="show4"></span></div>
+          </div>
+          <div class="col3-col2 col33">
+            <div id="w133">W<sub>13new = </sub> <span id="show5"></span></div>
+            <div id="w144">W<sub>14new = </sub> <span id="show6"></span></div>
+            <div id="w233">W<sub>23new = </sub> <span id="show7"></span></div>
+            <div id="w244">W<sub>24new = </sub> <span id="show8"></span></div>
+            <div id="w355">W<sub>35new = </sub> <span id="show9"></span></div>
+            <div id="w455">W<sub>45new = </sub> <span id="show10"></span></div>
+          </div>
+          <div class="col3-col3 col33">
+            <div id="theta33">
+              &Theta;<sub>3new = </sub> <span id="show11"></span>
+            </div>
+            <div id="theta44">
+              &Theta;<sub>4new = </sub> <span id="show12"></span>
+            </div>
+            <div id="theta55">
+              &Theta;<sub>5new = </sub> <span id="show13"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Jquery -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/back_propagation.js"></script>
+</html>

@@ -1,0 +1,172 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container-d {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eef;
+}
+
+.container-d .col1,
+.container-d .col3 {
+  width: 46%;
+  height: 100vh;
+  padding: 30px;
+}
+
+.container-d .col1 h3 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 40px;
+  text-decoration: underline;
+  color: #030431;
+}
+
+.container-d .col1 p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.container-d .col1 img {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.container-d .col1 .col1-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.container-d .col1 .col1-box > div {
+  width: 50%;
+}
+
+.container-d .col1 .user-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.container-d .col1 .user-input label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.container-d .col1 .user-input .theta {
+  margin-right: 9px;
+}
+
+.container-d .col1 .user-input .alpha {
+  margin-right: 17px;
+}
+
+.container-d .col1 .sel {
+  margin-right: 10px !important;
+  padding: 8px 12px !important;
+}
+
+.container-d .col1 .sel + i {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  display: none;
+}
+
+.container-d .col1 .note {
+  line-height: 1.5;
+  border: 1px solid #01987a;
+  padding: 5px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.showing-element {
+  display: inline-block !important;
+}
+
+.container-d .col2 {
+  background-color: #01987a;
+  width: 2%;
+  height: 137vh;
+}
+
+.container-d .all-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-d button {
+  background-color: #01987a;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+
+.container-d button:hover {
+  background-color: #065a49;
+}
+
+.container-d .col3 > img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 450px;
+  height: 350px;
+  margin-bottom: 60px;
+}
+
+.container-d .col3 h3 {
+  font-size: 22px;
+  text-align: center;
+  text-decoration: underline;
+  color: #030431;
+  margin-bottom: 30px;
+}
+
+.container-d .col3 h3 span {
+  color: red;
+  font-weight: bold;
+}
+
+.container-d .col3 .col3-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-d .col3 .col3-box .col33 div {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #01987a;
+  padding: 10px;
+  width: 170px;
+  border-radius: 10px;
+}
+
+.container-d .col3 .col33 span {
+  color: red;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}

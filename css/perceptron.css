@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.col {
+  position: relative;
+  font-size: 40px;
+  padding-bottom: 50px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.col1 {
+  width: 30%;
+  background-color: #f5f6f7;
+  padding: 30px 20px;
+}
+
+.col2 {
+  width: 25%;
+}
+
+.col3 {
+  width: 45%;
+  margin: 0px auto;
+}
+.resizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  background-color: #ccc;
+  cursor: col-resize;
+  user-select: none;
+  transition: 0.6s;
+}
+
+.resizer:hover {
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+.header {
+  color: #0a0a23;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-question {
+  width: 100%;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+.image-question {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.buttons {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.btn {
+  background-color: #01987a;
+  padding: 14px;
+  outline: none;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.equations {
+  width: 100%;
+}
+
+.equations img {
+  object-fit: contain;
+  margin-left: 10px;
+}
+.equations .header {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.image-question-equation-active {
+  display: block;
+  animation: sliderIn 2s forwards;
+}
+.image-question-equation-nonactive {
+  display: block;
+  animation: sliderOut 2s forwards;
+}
+.table {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  border-bottom: 3px solid #01987a;
+}
+thead {
+  position: sticky;
+  top: 0;
+}
+#head-table-row {
+  background-color: #01987a;
+  color: #fff;
+}
+tr:nth-child(even) {
+  background-color: #f3f3f3;
+  color: #000;
+}
+tr:nth-child(odd) {
+  background-color: #ffffff;
+  color: #000;
+}
+.epoch {
+  background-color: #01987a;
+  color: #fff;
+}
+th,
+td {
+  font-weight: 600;
+  padding: 12px;
+}
+.rows > td {
+  animation-name: rows;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rows {
+  from {
+    display: none;
+    padding-top: 0px;
+  }
+
+  to {
+    display: block;
+    padding-top: 20px;
+  }
+}
+@keyframes sliderIn {
+  from {
+    display: block;
+    transform: translateX(-100%);
+  }
+  to {
+    display: block;
+    transform: translateX(0%);
+  }
+}

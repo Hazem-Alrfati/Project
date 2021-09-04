@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/perceptron.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Perceptron | Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col col1">
+        <h3 class="header">Perceptron Learning: Logical Operation (AND)</h3>
+        <p class="content-question">
+          Welcome to Machine Learning Tutorials "Perceptron Example". This will
+          guide you to understand the perceptron step by step.
+        </p>
+        <div class="content-question">
+          <img
+            src="./imgs/perceptron/perceptorn.JPG"
+            class="image-question"
+            alt="Perceptron"
+          />
+        </div>
+        <div class="content-question">
+          <img
+            src="./imgs/perceptron/AND.jpg"
+            class="image-question"
+            alt="Perceptron"
+          />
+        </div>
+        <div class="buttons">
+          <button class="btn back">Back</button>
+          <button class="btn next">Next</button>
+        </div>
+      </div>
+      <div class="col col2">
+        <div id="equations" class="equations">
+          <h3 class="header">Equations</h3>
+          <img
+            class="image-question-equation"
+            id="image-question-equation"
+            src="./imgs/perceptron/General.JPG"
+            alt="Equations"
+          />
+        </div>
+      </div>
+      <div class="col col3">
+        <table class="table">
+          <thead>
+            <tr id="head-table-row">
+              <th>Epoch</th>
+              <th colspan="2">
+                <div>
+                  Inputs
+                  <hr style="margin: 10px" />
+                  x1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x2
+                </div>
+              </th>
+              <th>
+                <div>
+                  Desired<br />
+                  output
+                  <hr style="margin: 10px" />
+                  Yd
+                </div>
+              </th>
+              <th colspan="2">
+                <div>
+                  Initial<br />
+                  weights
+                  <hr style="margin: 10px" />
+                  w1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;w2
+                </div>
+              </th>
+              <th>
+                <div>
+                  Actual<br />
+                  output
+                  <hr style="margin: 10px" />
+                  Y
+                </div>
+              </th>
+              <th>
+                <div>
+                  Error
+                  <hr style="margin: 10px" />
+                  e
+                </div>
+              </th>
+              <th colspan="2">
+                <div>
+                  Final<br />
+                  weights
+                  <hr style="margin: 10px" />
+                  w1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;w2
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="js/perceptron.js"></script>
+  </body>
+</html>

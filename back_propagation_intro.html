@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back-Propagation | Page</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/back_propagation_intro.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Piedra&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="pointerUp">
+      <a href="#home"><i class="fas fa-level-up-alt"></i></a>
+    </div>
+    <!-- Start Header -->
+    <header id="home">
+      <div class="container">
+        <div class="logo"><i class="fas fa-brain"></i></div>
+        <div class="head-name">Back-Propagation</div>
+      </div>
+    </header>
+    <!-- End Header-->
+
+    <!-- Start Landing -->
+    <div class="landing">
+      <div class="container">
+        <h2>A Beginner's Guide For Back-Propagation</h2>
+        <h3>Multilayer neural networks</h3>
+        <p>
+          A multilayer perceptron is a feedforward neural network with one or
+          more hidden layers.Typically, the network consists of an input layer
+          of source neurons, at least one middle or hidden layer of
+          computational neurons, and an output layer of computational neurons.
+          The input signals are propagated in a forward direction on a
+          layer-by-layer basis
+        </p>
+        <h3>But why do we need a hidden layer?</h3>
+        <p>
+          Each layer in a multilayer neural network has its own specific
+          function.
+        </p>
+        <ol>
+          <li>
+            <span>The input layer: </span>accepts input signals from the outside
+            world and redistributes these signals to all neurons in the hidden
+            layer, input layer rarely includes computing neurons.
+          </li>
+          <li>
+            <span>The hidden layer: </span> detect the features; the weights of
+            the neurons represent the features hidden in the input patterns.
+            These features are then used by the output layer in determining the
+            output pattern.
+          </li>
+          <li>
+            <span>The output layer: </span> accepts output signals, or in other
+            words a stimulus pattern, from the hidden layer and establishes the
+            output pattern of the entire network.
+          </li>
+        </ol>
+        <p>
+          With one hidden layer, we can represent any continuous function of the
+          input signals, and with two hidden layers even discontinuous functions
+          can be represented.
+        </p>
+        <img src="./imgs/back1.png" alt="" />
+        <h3>
+          Why is a middle layer in a multilayer network called a ‘hidden’ layer?
+          What does this layer hide?
+        </h3>
+        <p>
+          A hidden layer ‘hides’ its desired output, Neurons in the hidden layer
+          cannot be observed through the input/output behaviour of the network.
+        </p>
+        <h3>Can a neural network include more than two hidden layers?</h3>
+        <p>
+          Commercial ANNs incorporate three and sometimes four layers, including
+          one or two hidden layers. Each layer can contain from 10 to 1000
+          neurons.
+          <br /><br />
+          Experimental neural networks may have five or even six layers,
+          including three or four hidden layers, and utilise millions of
+          neurons, but most practical applications use only three layers,
+          because each additional layer increases the computational burden
+          exponentially.
+        </p>
+        <h3>What is Backpropagation?</h3>
+        <p>
+          The Backpropagation algorithm is a supervised learning method for
+          multilayer feed-forward networks from the field of Artificial Neural
+          Networks.
+          <br /><br />
+          Typically, a back-propagation network is a multilayer network that has
+          three or four layers. The layers are fully connected that is every
+          neuron in each layer is connected to every other neuron in the
+          adjacent forward layer.
+        </p>
+        <h3>How Backpropagation Algorithm Works?</h3>
+        <ol>
+          <li>Inputs X, arrive through the preconnected path</li>
+          <li>
+            Input is modeled using real weights w. The weights are usually
+            randomly selected.
+          </li>
+          <li>
+            Calculate the output for every neuron from the input layer, to the
+            hidden layers, to the output layer.
+          </li>
+          <li>
+            Calculate the error in the outputs, Error= Actual Output – Desired
+            Output
+          </li>
+          <li>
+            Travel back from the output layer to the hidden layer to adjust the
+            weights such that the error is decreased.
+          </li>
+          <li>
+            Keep repeating the process until the desired output is achieved
+          </li>
+        </ol>
+        <h3>Back-Propagation Steps And Equations</h3>
+        <div class="images">
+          <img src="./imgs/back2.png" alt="" />
+          <img src="./imgs/back3.png" alt="" />
+          <img src="./imgs/back4.png" alt="" />
+          <img src="./imgs/back5.png" alt="" />
+        </div>
+        <h3>Why We Need Backpropagation?</h3>
+        <ul>
+          <li>Backpropagation is fast, simple and easy to program</li>
+          <li>It has no parameters to tune apart from the numbers of input</li>
+          <li>
+            It is a flexible method as it does not require prior knowledge about
+            the network
+          </li>
+          <li>
+            It is a standard method that generally works well It does not need
+            any special mention of the features of the function to be learned.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Landing -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="example">
+        <a href="back_propagation.html" target="_blank">
+          Let's Go To See Logical Operation ( XOR ) Example Step By Step
+          <i class="fas fa-angle-right"></i>
+        </a>
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <script src="js/back_propagation_intro.js"></script>
+  </body>
+</html>
